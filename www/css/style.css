@@ -1,0 +1,158 @@
+#map {
+  width: 100%;
+  height: 100%;
+}
+.gm-style a {
+    display: none !important;
+}
+
+.scroll {
+  height: 80%;
+}
+
+.sidemenu{
+
+	background-color: #002735;
+	color: white;
+}
+
+
+.custom {
+  background-color: #002735 !important;
+
+}
+
+.custom .item {
+  background-color: transparent;
+  border:none;
+  border-top: 1px solid;
+  border-bottom:2px solid;
+  border-color: #666;
+  color: white;
+}
+
+
+.custom .item:last-child {
+  border-bottom: 1px solid #666;
+}
+
+.custom .item-complex .item-content, .dark .item-radio .item-content {
+  background-color: transparent;
+}
+
+
+.custom h2,
+.custom h3,
+.custom p,
+.custom a {
+  color: white;
+}
+
+
+
+.background-grey {
+  background-color: #40537a !important;
+}
+
+.background-lightgrey {
+  background-color: #4d6799;
+}
+
+/* Top */
+.menu-top {
+  height: 40%;
+}
+
+/* Middle */
+.menu-middle {
+  height: 40%;
+}
+
+/* Bottom */
+.menu-bottom {
+  position:relative;
+  height: 20%;
+  background-color: #2e3e5c;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+/* Components */
+.col.col-center{
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: center;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 10px solid #627499;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.profile-image:active {
+  border: 3px solid #ccffff;
+}
+
+/* Buttons */
+.button-circle {
+  width: 65px;
+  height: 65px;
+  color: white;
+  border-radius: 50%;
+  background-color: #627499;
+  border: 3px solid #627499;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.button-circle i {
+  font-size: 1.5em;
+  color: white;
+}
+
+.button-circle:active {
+  border: 3px solid #ccffff;
+  background-color: #40537a;
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
+}
+
+.button-circle.rotate-15 {
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+
+.button-circle.rotate-15 + h3 {
+  display:inline-block;
+  margin-left: 20px;
+  color: #627499;
+}
+
+.menu-bottom .button-circle {
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  background-color: #396acc;
+  border: 3px solid #396acc;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.icon{
+  font-size: 40px !important;
+}
+
+
+
+

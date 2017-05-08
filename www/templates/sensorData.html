@@ -1,0 +1,26 @@
+<ion-view view-title="Data" ng-controller="SensorDataCtrl">
+  <ion-content has-bouncing="false">
+    <div class="list">
+      <div class="item item-divider">
+        {{ sub_title }}
+      </div>
+
+    <div class="list">
+      <div class="item item-text-wrap">
+      	JSON : <br>{<br>
+      		&nbsp&nbsp&nbsp&nbsp device:"{{resultSensor.deviceID}}"<br>
+      		&nbsp&nbsp&nbsp&nbsp Temperature:"{{resultSensor.sensorValue1}}"<br>
+      		&nbsp&nbsp&nbsp&nbsp Humidity:"{{resultSensor.sensorValue2}}"<br>
+      		&nbsp&nbsp&nbsp&nbsp Longitude:"{{resultSensor.sensorValue3}}"<br>
+      		&nbsp&nbsp&nbsp&nbsp Latitude:"{{resultSensor.sensorValue4}}"<br>
+      		&nbsp&nbsp&nbsp&nbsp Voltage:"{{resultSensor.sensorValue5}}"<br>
+      		&nbsp&nbsp&nbsp&nbsp Toggle:"{{resultSensor.sensorValue6}}"<br>
+          &nbsp&nbsp&nbsp&nbsp Fan PWM:"{{resultSensor.sensorValue7}}"<br>
+          &nbsp&nbsp&nbsp&nbsp Led ON/OFF:"{{resultSensor.sensorValue8}}"<br>
+      		&nbsp&nbsp&nbsp&nbsp timestamp:"{{resultSensor.timestamp}}"<br>
+      	}
+      </div>
+    </div>
+      
+  </ion-content>
+</ion-view>

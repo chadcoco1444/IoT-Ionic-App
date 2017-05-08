@@ -1,0 +1,88 @@
+<ion-side-menus enable-menu-with-back-views="true">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" ng-controller="AppCtrl">
+
+    <ion-pane class="background-grey">
+
+      <div class="row menu-top">
+        <div class="col col-center">
+          <img class="profile-image" ng-src="img/default-profile.png" animate-ratio="fadeIn"/>
+        </div>
+      </div>
+
+      <div class="menu-middle">
+        <div class="row">
+          <div class="col col-center">
+
+            <button menu-close class="button-circle" animate-ratio="fadeIn" ng-click="login()">
+              <i menu-close class="ion-person-stalker" ></i>
+            </button>
+
+          </div>
+
+          <div class="col col-center">
+          <a href="#/app/home">
+            <button menu-close class="button-circle" animate-ratio="fadeIn">
+              <i class="ion-ios-pulse-strong"></i>
+            </button>
+            </a>
+          </div>
+          <!--div class="col col-center">
+          <a href="#/app/sensorData">
+            <button menu-close class="button-circle" animate-ratio="fadeIn">
+              <i class="ion-stats-bars"></i>
+            </button>
+            </a>
+          </div-->
+          <div class="col col-center">
+            <a href="#/app/gpsmap">
+            <button menu-close class="button-circle" animate-ratio="fadeIn">
+              <i class="ion-location"></i>
+            </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col col-center">
+          <a href="#/app/about">
+            <button menu-close class="button-circle" animate-ratio="fadeIn">
+              <i class="ion-clipboard"></i>
+            </button>
+            </a>
+          </div>
+          <div class="col col-center">
+          <a href="#/app/setting">
+            <button  menu-close class="button-circle" animate-ratio="fadeIn">
+              <i class="ion-gear-a"></i>
+            </button>
+            </a>
+          </div>
+        </div>
+      </div>
+     <a href="#/app/home">
+      <div class="menu-bottom" animate-ratio="slideUp">
+
+          <button menu-close class="button-circle" >
+            <i class="ion-home"></i>
+
+        </div>
+        </a>
+      </div>
+
+
+    </ion-pane>
+  </ion-side-menu>
+</ion-side-menus>

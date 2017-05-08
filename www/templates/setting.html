@@ -1,0 +1,146 @@
+<ion-view view-title="Settings" ng-controller="SetCtrl">
+  <ion-content has-bouncing="false" style="background-color:#f5f5f5;">
+    <div class="app" style="display:none;">
+            <div id="deviceready" class="blink">
+                <p class="event listening"></p>
+                <p class="event received" id="deviceready-text"></p>
+            </div>
+    </div>
+      <div class ="list">
+               <div class="item item-divider">
+                    Local Service
+                </div>
+
+                    <ion-toggle ng-model="pushNotification.checked" ng-change="pushNotificationChange($event)">
+                      Connect to Wi-Fi
+                    </ion-toggle>
+
+
+
+
+    <ion-list ng-show="show">
+
+               <div class="item" ng-click="openInAppBrowser()">
+                    Advanced Configuration...
+                  </div>
+
+
+                <div class="item item-divider">
+                    Device Control
+                </div>
+                   <ion-toggle ng-model="ledNotification.checked" ng-change="ledNotificationChange()">
+                      LED {{data1.volume}}
+                    </ion-toggle>
+
+                <div class="item">
+                       Fan PWM: {{data2.volume}}%
+                        <br>
+                          <div class="range range-positive">
+                              <i class="icon ion-ios-sunny-outline"></i>
+                              <input type="range" name="volume" ng-model="data2.volume" min="0" max="100">
+                              <i class="icon ion-ios-sunny"></i>
+                          </div>
+                </div>
+
+
+
+                <!--button class="button button-full button-stable" ng-click="postToDevice()">
+                  Submit
+                </button>
+
+                <div class="item item-divider">
+                    Device Information
+                </div-->
+
+                <!--div class="item">
+                  <pre ng-bind="pushNotification | json"></pre>
+                  <pre ng-bind="ledNotification  | json"></pre>
+                </div-->
+                </div>
+                <!--div class="list card">
+      <div href="#" class="item item-icon-left">
+        <i class="icon ion-model-s"></i>
+        <div class="row">
+          <div class="col col-75">
+            <h2>Device ID :  </h2></div>
+          <div class="col">
+            <h2>{{result.deviceID}}</h2></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list card">
+      <div href="#" class="item item-icon-left">
+        <i class="icon ion-thermometer"></i>
+        <div class="row">
+          <div class="col col-75">
+            <h2>Temperature :  </h2></div>
+          <div class="col">
+            <h2>{{result.sensorValue1}}°C</h2></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list card">
+      <div href="#" class="item item-icon-left">
+      <i class="icon ion-waterdrop"></i>
+      <div class="row">
+        <div class="col col-75">
+          <h2>Humidity : </h2></div>
+      <div class="col">
+          <h2>{{result.sensorValue2}}%</h2></div>
+      </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div href="#" class="item item-icon-left">
+        <div class="row" >
+          <i class="icon ion-speedometer"></i>
+          <div class="col col-75">
+            <h2>Voltage : </h2></div>
+          <div class="col ">
+            <h2>{{result.sensorValue5}}V</h2></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list card">
+      <div href="#" class="item item-icon-left">
+        <i class="icon ion-ios-navigate-outline"></i>
+          <div class="row">
+              <div class="col ">
+                <h2>Location: </h2></div>
+              <div class="col ">
+                <h2>{{result.sensorValue3}},{{result.sensorValue4}}</h2></div>
+          </div>
+      </div>
+    </div>
+
+    <div class="list card">
+      <div href="#" class="item item-icon-left">
+        <i class="icon ion-toggle"></i>
+          <div class="row">
+              <div class="col col-75">
+                <h2>Toggle ON/OFF: </h2></div>
+              <div class="col ">
+                <h2>{{result.sensorValue6}}</h2></div>
+          </div>
+      </div>
+    </div>
+
+    <div class="list card">
+      <div href="#" class="item item-icon-left">
+        <i class="icon ion-ios-time-outline"></i>
+          <div class="row">
+              <div class="col ">
+                <h2>Timestamp: </h2></div>
+              <div class="col ">
+                <h2>{{result.timestamp}}</h2></div>
+          </div>
+      </div>
+    </div-->
+
+
+    </ion-list>
+  </ion-content>
+</ion-view>
